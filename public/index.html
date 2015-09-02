@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+    #controls {
+      position: absolute;
+      bottom: 0px;
+      left:20%;
+    
+ 
+      width: 300px;
+      /*background-color: #ff0000;*/
+
+    }
+
+    #board {
+      font-family: Tahoma;
+      font-size: 50px;
+      
+      left: 10%;
+      width: 80%;
+      height: auto;
+      position: absolute;
+      top: 10px;
+    }
+
+    #ready {
+      position: absolute;
+      width: 160px;
+      height: 70px;
+      font-family: Tahoma;
+      font-size: 50px;
+      background-color: #00ff00;
+      top: 40%;
+      left: 40%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    #progBar {
+      display:inline-block;
+      position: absolute;
+      left: 40%;
+      margin:0 auto;
+      width: 100px;
+      height: 100px;
+
+    }
+
+    .playerMove {
+      width: 96px;
+      float: left;
+      display:inline-block;
+    }
+
+    .oppMove {
+      width: 96px;
+      float: right;
+      display:inline-block;
+    }
+
+    .choice {
+      height: 143px;
+      width: 95px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .rock {
+      background-image: url('resources/rock.png');
+    }
+    .paper {
+      background-image: url('resources/paper.png');
+    }
+    .scissors {
+      background-image: url('resources/scissors.png');
+    }
+    .empty {
+      background-image: url('resources/empty.png');
+    }
+
+    </style>
+  </head>
+  <body>
+  <div id="board">
+    <div class="playerMove">
+      YOU<br>
+      <div id="AMoveDisp" class="choice empty"></div>
+    </div>
+    <div id="progBar"></div>
+      <div class="oppMove">
+      THEM<br>
+      <div id="BMoveDisp" class="choice empty"></div>
+    </div>
+  </div>
+  <div id="result"></div>
+  <div id="ready" class="hidden">READY</div>
+  <div id="controls">
+    <div class="choice rock" id="rock"></div>
+    <div class="choice paper" id="paper"></div>
+    <div class="choice scissors" id="scissors"></div>
+  </div>
+<!--    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+     <script src="http://code.jquery.com/jquery-1.11.1.js"></script> -->
+     <script src="js/socket.io.js"></script>
+     <script src="js/jquery-1.11.2.min.js"></script>
+     <script src="js/progressBar.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

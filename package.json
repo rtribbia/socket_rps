@@ -1,0 +1,15 @@
+{
+  "name": "socket_rps",
+  "version": "1.0.0",
+  "description": "2-player rock paper scissors",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Tribbia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6"
+  }
+}
