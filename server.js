@@ -219,24 +219,6 @@ function makePlay(socket, play) {
 	}
 
 
-	// if (currentRound[player] == 0) {
-	// 	currentRound[player] = play;
-	// 	sys('player' + (player + 1) + ' played ' + play + ' in round: ' + room.rounds.length);
-	// 	if (currentRound.indexOf(0) == -1) {
-
-
-	// 		var winner = (player == 0) ? RPS(play,currentRound[1]) : RPS(currentRound[0],play);
-	// 		if (winner === true) {
-	// 			sys('TIE!');
-	// 		} else {
-	// 			sys('Player #' + winner + ' wins!');
-	// 		}
-	// 		room.rounds.push([0,0]);
-	// 	}
-
-	// } else {
-	// 	sys('WAITING FOR OTHER PLAYER');
-	// }
 }
 
 
