@@ -7,15 +7,6 @@ $('#ready').click(function(){
 	socket.emit('playerReady',1);
 	$('#ready').attr('class','hidden');
 });
-      // $('form').submit(function(){
-      //   socket.emit('chat message', $('#m').val());
-      //   $('#m').val('');
-      //   return false;
-      // });
-      // socket.on('chat message', function(msg){
-      //   $('#messages').append($('<li>').text(msg));
-      // });
-
 
 function onc(evt) {
 	socket.emit('sendplay',evt.target.id);
